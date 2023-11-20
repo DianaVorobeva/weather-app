@@ -1,0 +1,314 @@
+body {
+  background-color: #F7F3F3;
+  margin: 0;
+}
+
+.container {
+   background-image: url(https://images.unsplash.com/photo-1612404748636-568ca4155994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1287&q=80);
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   width: 40%;
+   margin-left: 480px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   margin-top: 30px;
+}
+
+.city {
+   font-size: 35px;
+   margin-top: 50px;
+   color: white;
+   letter-spacing: 5px;
+   text-shadow: 1px 2px black;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+.input {
+   padding: 15px;
+   padding-left: 20px;
+   padding-right: 20px;
+   border: none;
+   border-radius: 10px;
+   background-color:rgba(156, 180, 204, 0.8);
+   font-family: 'Ubuntu', sans-serif;
+   color:black;
+   width: 300px;
+}
+
+.input:focus {
+   background-color: rgba(255, 255, 255, 0.6);
+}
+
+.mainPart {
+   width: 500px;
+   height: 500px;
+   border-radius: 100%;
+   background-color:rgba(156, 180, 204, 0.8);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin-top: 100px;
+   color: white;
+   text-shadow: 1px 2px black;
+   font-family: 'Ubuntu', sans-serif;
+}
+
+.minMax {
+   font-size: 30px;
+}
+
+.temperature {
+   margin-top: 40px;
+   margin-bottom: 0;
+   font-size: 60px;
+   text-shadow: 1px 2px black;
+}
+
+.conditionals {
+   font-size: 30px;
+}
+
+.block1 {
+   display: flex;
+   justify-content: space-around;
+   width: 80%;
+}
+
+.box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 3px;
+}
+
+img {
+   width: 28px;
+   height: 28px;
+}
+
+.windDirection, .windSpeed, .humidity {
+   font-size: 30px;
+}
+
+.time {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+}
+
+.date {
+   margin-bottom: 0;
+   margin-top: 30px;
+}
+
+.hours {
+   margin-top: 5px;
+}
+
+.otherInfo {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   width: 600px;
+   background-color:rgba(156, 180, 204, 0.8);
+   border-radius: 15px;
+   margin-top: 30px;
+   color: white;
+   text-shadow: 1px 1px black;
+   font-family: 'Ubuntu', sans-serif;
+   padding: 10px;
+}
+
+.item {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 19px;
+   margin-top: 5px;
+}
+
+.description {
+   margin-bottom: 2px;
+   font-weight: lighter;
+   font-size: 15px;
+   color: black;
+   text-shadow: none;
+}
+
+
+@media all and (max-width: 800px){
+   .container {
+       width: 100%;
+       margin-left: 0px;
+       margin-right: 0px;
+   }
+   
+   .header {
+       margin-top: 30px;
+   }
+   
+   h2 {
+       font-size: 40px;
+       margin-top: 20px;
+   }
+
+   .mainPart {
+       width: 600px;
+       height: 600px;
+       border-radius: 100%;
+       margin-top: 20px;
+   }
+
+   .minMax {
+       font-size: 30px;
+   }
+   
+   .temperature {
+       margin-top: 80px;
+       font-size: 40px;
+   }
+   
+   .conditionals {
+       font-size: 30px;
+   }
+   
+   .block1 {
+       display: flex;
+       justify-content: space-around;
+       width: 80%;
+   }
+
+   img {
+       width: 25px;
+       height: 25px;
+   }
+   
+   .windDirection,.windSpeed,.humidity {
+       font-size: 25px;
+   }
+
+   .date {
+    font-size: 20px;
+    margin-top: 40px;
+   }
+   
+   .hours {
+       margin-top: 10px;
+   }
+   
+   .otherInfo {
+       width: 600px;
+       margin-top: 30px;
+       padding: 10px;
+   }
+   
+   .item {
+       font-size: 10px;
+       margin-top: 5px;
+   }
+   
+   .description {
+       margin-bottom: 2px;
+       font-weight: lighter;
+       font-size: 15px;
+       color: black;
+       text-shadow: none;
+   }
+   
+   
+}
+
+@media all and (max-width: 500px){
+   .container {
+       width: 100%;
+       margin-left: 0px;
+   }
+   
+   .header {
+       margin-top: 40px;
+   }
+   
+   .city {
+       font-size: 27px;
+       margin-top: 70px;
+   }
+
+   .mainPart {
+       width: 350px;
+       height: 350px;
+       border-radius: 100%;
+       margin-top: 70px;
+   }
+
+   .minMax {
+       font-size: 18px;
+   }
+   
+   .temperature {
+       margin-top: 10px;
+       font-size: 35px;
+   }
+   
+   .conditionals {
+       font-size: 18px;
+   }
+   
+   .block1 {
+       display: flex;
+       justify-content: space-around;
+       background-color:rgba(156, 180, 204, 0.8);
+       width: 80%;
+   }
+
+   .box {
+       font-size: 18px;
+   }
+
+   img {
+       width: 20px;
+       height: 20px;
+   }
+   
+   .windDirection, .windSpeed, .humidity {
+       font-size: 20px;
+   }
+
+   .date {
+       margin-bottom: 0;
+       margin-top: 40px;
+       font-size: 18px;
+   }
+   
+   .hours {
+       margin-top: 10px;
+       font-size: 15px;
+   }
+   
+   .otherInfo {
+       width: 350px;
+       margin-top: 60px;
+       padding: 10px;
+   }
+   
+   .item {
+       font-size: 16px;
+       margin-top: 5px;
+   }
+   
+   .description {
+       font-size: 13px;
+   }
+}
