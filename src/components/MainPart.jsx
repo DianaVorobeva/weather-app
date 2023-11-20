@@ -1,4 +1,4 @@
-import windBlack  from '../assets/windBlack.png';
+import windBlack  from '../assets/windblack.png';
 import dropBlack  from '../assets/drop-black.png';
 import compassBlack from '../assets/compassBlack.png';
 import { useEffect, useState } from 'react';
